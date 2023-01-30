@@ -1,0 +1,152 @@
+
+
+============================== 2023-01-30 01:36:02.900901 | a0f69d2c-900b-40b9-a65f-0bd914c3dbd9 ==============================
+[0m01:36:02.900918 [info ] [MainThread]: Running with dbt=1.3.1
+[0m01:36:02.901385 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/mango/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m01:36:02.901555 [debug] [MainThread]: Tracking: tracking
+[0m01:36:02.920166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9941f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9d3f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9d3fd0>]}
+[0m01:36:02.941487 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.bigquery'
+[0m01:36:02.970716 [debug] [MainThread]: Executing "git --help"
+[0m01:36:02.991915 [debug] [MainThread]: STDOUT: "b"\xe7\x94\xa8\xe6\xb3\x95\xef\xbc\x9agit [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\n\xe9\x80\x99\xe4\xba\x9b\xe6\x98\xaf\xe5\x90\x84\xe7\xa8\xae\xe5\xa0\xb4\xe5\x90\x88\xe5\xb8\xb8\xe8\xa6\x8b\xe7\x9a\x84 Git \xe6\x8c\x87\xe4\xbb\xa4\xef\xbc\x9a\n\n\xe9\x96\x8b\xe5\xa7\x8b\xe4\xb8\x80\xe5\x80\x8b\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x8d\x80\xef\xbc\x88\xe5\x8f\x83\xe8\xa6\x8b\xef\xbc\x9agit help tutorial\xef\xbc\x89\n   clone     \xe8\xa4\x87\xe8\xa3\xbd\xe7\x89\x88\xe6\x9c\xac\xe5\xba\xab\xe8\x87\xb3\xe6\x96\xb0\xe7\x9b\xae\xe9\x8c\x84\n   init      \xe5\xbb\xba\xe7\xab\x8b\xe4\xb8\x80\xe5\x80\x8b\xe7\xa9\xba\xe7\x9a\x84 Git \xe7\x89\x88\xe6\x9c\xac\xe5\xba\xab\xe6\x88\x96\xe9\x87\x8d\xe6\x96\xb0\xe5\x88\x9d\xe5\xa7\x8b\xe5\x8c\x96\xe4\xb8\x80\xe5\x80\x8b\xe5\xb7\xb2\xe5\xad\x98\xe5\x9c\xa8\xe7\x9a\x84\xe7\x89\x88\xe6\x9c\xac\xe5\xba\xab\n\n\xe5\x9c\xa8\xe7\x9b\xae\xe5\x89\x8d\xe8\xae\x8a\xe6\x9b\xb4\xe4\xb8\x8a\xe5\xb7\xa5\xe4\xbd\x9c\xef\xbc\x88\xe5\x8f\x83\xe8\xa6\x8b\xef\xbc\x9agit help everyday\xef\xbc\x89\n   add       \xe6\x96\xb0\xe5\xa2\x9e\xe6\xaa\x94\xe6\xa1\x88\xe5\x85\xa7\xe5\xae\xb9\xe8\x87\xb3\xe7\xb4\xa2\xe5\xbc\x95\n   mv        \xe7\xa7\xbb\xe5\x8b\x95\xe6\x88\x96\xe9\x87\x8d\xe6\x96\xb0\xe5\x91\xbd\xe5\x90\x8d\xe4\xb8\x80\xe5\x80\x8b\xe6\xaa\x94\xe6\xa1\x88\xe3\x80\x81\xe7\x9b\xae\xe9\x8c\x84\xe6\x88\x96\xe7\xac\xa6\xe8\x99\x9f\xe9\x80\xa3\xe7\xb5\x90\n   restore   \xe5\xbe\xa9\xe5\x8e\x9f\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x8d\x80\xe6\xaa\x94\xe6\xa1\x88\n   rm        \xe5\xbe\x9e\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x8d\x80\xe5\x92\x8c\xe7\xb4\xa2\xe5\xbc\x95\xe4\xb8\xad\xe5\x88\xaa\xe9\x99\xa4\xe6\xaa\x94\xe6\xa1\x88\n\n\xe6\xaa\xa2\xe6\x9f\xa5\xe6\xad\xb7\xe5\x8f\xb2\xe5\x92\x8c\xe7\x8b\x80\xe6\x85\x8b\xef\xbc\x88\xe5\x8f\x83\xe8\xa6\x8b\xef\xbc\x9agit help revisions\xef\xbc\x89\n   bisect    \xe9\x80\x8f\xe9\x81\x8e\xe4\xba\x8c\xe5\x88\x86\xe6\x90\x9c\xe5\xb0\x8b\xe5\xae\x9a\xe4\xbd\x8d\xe5\xbc\x95\xe5\x85\xa5 bug \xe7\x9a\x84\xe6\x8f\x90\xe4\xba\xa4\n   diff      \xe9\xa1\xaf\xe7\xa4\xba\xe6\x8f\x90\xe4\xba\xa4\xe4\xb9\x8b\xe9\x96\x93\xe3\x80\x81\xe6\x8f\x90\xe4\xba\xa4\xe5\x92\x8c\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x8d\x80\xe4\xb9\x8b\xe9\x96\x93\xe7\xad\x89\xe7\x9a\x84\xe5\xb7\xae\xe7\x95\xb0\n   grep      \xe8\xbc\xb8\xe5\x87\xba\xe5\x92\x8c\xe6\xa8\xa1\xe5\xbc\x8f\xe7\xac\xa6\xe5\x90\x88\xe7\x9a\x84\xe8\xa1\x8c\n   log       \xe9\xa1\xaf\xe7\xa4\xba\xe6\x8f\x90\xe4\xba\xa4\xe6\x97\xa5\xe8\xaa\x8c\n   show      \xe9\xa1\xaf\xe7\xa4\xba\xe5\x90\x84\xe7\xa8\xae\xe9\xa1\x9e\xe5\x9e\x8b\xe7\x9a\x84\xe7\x89\xa9\xe4\xbb\xb6\n   status    \xe9\xa1\xaf\xe7\xa4\xba\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x8d\x80\xe7\x8b\x80\xe6\x85\x8b\n\n\xe6\x93\xb4\xe5\xb1\x95\xe3\x80\x81\xe6\xa8\x99\xe8\xa8\x98\xe5\x92\x8c\xe8\xaa\xbf\xe6\xa0\xa1\xe6\x82\xa8\xe7\x9a\x84\xe6\xad\xb7\xe5\x8f\xb2\xe8\xa8\x98\xe9\x8c\x84\n   branch    \xe5\x88\x97\xe5\x87\xba\xe3\x80\x81\xe5\xbb\xba\xe7\xab\x8b\xe6\x88\x96\xe5\x88\xaa\xe9\x99\xa4\xe5\x88\x86\xe6\x94\xaf\n   commit    \xe8\xa8\x98\xe9\x8c\x84\xe8\xae\x8a\xe6\x9b\xb4\xe5\x88\xb0\xe7\x89\x88\xe6\x9c\xac\xe5\xba\xab\n   merge     \xe5\x90\x88\xe4\xbd\xb5\xe5\x85\xa9\xe5\x80\x8b\xe6\x88\x96\xe6\x9b\xb4\xe5\xa4\x9a\xe9\x96\x8b\xe7\x99\xbc\xe6\xad\xb7\xe5\x8f\xb2\n   rebase    \xe5\x9c\xa8\xe5\x8f\xa6\xe4\xb8\x80\xe5\x80\x8b\xe5\x88\x86\xe6\x94\xaf\xe4\xb8\x8a\xe9\x87\x8d\xe6\x96\xb0\xe5\xa5\x97\xe7\x94\xa8\xe6\x8f\x90\xe4\xba\xa4\n   reset     \xe9\x87\x8d\xe8\xa8\xad\xe7\x9b\xae\xe5\x89\x8d HEAD \xe5\x88\xb0\xe6\x8c\x87\xe5\xae\x9a\xe7\x8b\x80\xe6\x85\x8b\n   switch    \xe5\x88\x87\xe6\x8f\x9b\xe5\x88\x86\xe6\x94\xaf\n   tag       \xe5\xbb\xba\xe7\xab\x8b\xe3\x80\x81\xe5\x88\x97\xe5\x87\xba\xe3\x80\x81\xe5\x88\xaa\xe9\x99\xa4\xe6\x88\x96\xe9\xa9\x97\xe8\xad\x89\xe4\xb8\x80\xe5\x80\x8b GPG \xe7\xb0\xbd\xe5\x90\x8d\xe7\x9a\x84\xe6\xa8\x99\xe7\xb1\xa4\xe7\x89\xa9\xe4\xbb\xb6\n\n\xe5\x8d\x94\xe5\x90\x8c\xef\xbc\x88\xe5\x8f\x83\xe8\xa6\x8b\xef\xbc\x9agit help workflows\xef\xbc\x89\n   fetch     \xe5\xbe\x9e\xe5\x8f\xa6\xe5\xa4\x96\xe4\xb8\x80\xe5\x80\x8b\xe7\x89\x88\xe6\x9c\xac\xe5\xba\xab\xe4\xb8\x8b\xe8\xbc\x89\xe7\x89\xa9\xe4\xbb\xb6\xe5\x92\x8c\xe5\xbc\x95\xe7\x94\xa8\n   pull      \xe5\x8f\x96\xe5\xbe\x97\xe4\xb8\xa6\xe6\x95\xb4\xe5\x90\x88\xe5\x8f\xa6\xe5\xa4\x96\xe7\x9a\x84\xe7\x89\x88\xe6\x9c\xac\xe5\xba\xab\xe6\x88\x96\xe4\xb8\x80\xe5\x80\x8b\xe6\x9c\xac\xe6\xa9\x9f\xe5\x88\x86\xe6\x94\xaf\n   push      \xe6\x9b\xb4\xe6\x96\xb0\xe9\x81\xa0\xe7\xab\xaf\xe5\xbc\x95\xe7\x94\xa8\xe5\x92\x8c\xe7\x9b\xb8\xe9\x97\x9c\xe7\x9a\x84\xe7\x89\xa9\xe4\xbb\xb6\n\n\xe6\x8c\x87\xe4\xbb\xa4 'git help -a' \xe5\x92\x8c 'git help -g' \xe9\xa1\xaf\xe7\xa4\xba\xe5\x8f\xaf\xe7\x94\xa8\xe7\x9a\x84\xe5\xad\x90\xe6\x8c\x87\xe4\xbb\xa4\xe5\x92\x8c\xe4\xb8\x80\xe4\xba\x9b\xe6\xa6\x82\xe5\xbf\xb5\xe8\xaa\xaa\xe6\x98\x8e\xe3\x80\x82\n\xe6\xaa\xa2\xe8\xa6\x96 'git help <\xe5\x91\xbd\xe4\xbb\xa4>' \xe6\x88\x96 'git help <\xe6\xa6\x82\xe5\xbf\xb5>' \xe4\xbb\xa5\xe5\x8f\x96\xe5\xbe\x97\xe6\x8f\x90\xe4\xbe\x9b\xe5\xad\x90\xe6\x8c\x87\xe4\xbb\xa4\xe6\x88\x96\xe6\xa6\x82\xe5\xbf\xb5\n\xe8\xaa\xaa\xe6\x98\x8e\xe3\x80\x82\n\xe6\x9c\x89\xe9\x97\x9c\xe7\xb3\xbb\xe7\xb5\xb1\xe6\xa6\x82\xe8\xbf\xb0\xef\xbc\x8c\xe6\xaa\xa2\xe8\xa6\x96 'git help git'\xe3\x80\x82\n""
+[0m01:36:02.993174 [debug] [MainThread]: STDERR: "b''"
+[0m01:36:02.994733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9bb730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba52760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba526a0>]}
+[0m01:36:02.995463 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-30 01:46:13.577793 | d5f97ef3-088d-48df-bcee-698f82071659 ==============================
+[0m01:46:13.577793 [info ] [MainThread]: Running with dbt=1.4.1
+[0m01:46:13.580616 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/mango/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m01:46:13.580959 [debug] [MainThread]: Tracking: tracking
+[0m01:46:13.598516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112101fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112101be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112101a00>]}
+[0m01:46:15.879119 [debug] [MainThread]: Executing "git --help"
+[0m01:46:15.891164 [debug] [MainThread]: STDOUT: "b"\xe7\x94\xa8\xe6\xb3\x95\xef\xbc\x9agit [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\n\xe9\x80\x99\xe4\xba\x9b\xe6\x98\xaf\xe5\x90\x84\xe7\xa8\xae\xe5\xa0\xb4\xe5\x90\x88\xe5\xb8\xb8\xe8\xa6\x8b\xe7\x9a\x84 Git \xe6\x8c\x87\xe4\xbb\xa4\xef\xbc\x9a\n\n\xe9\x96\x8b\xe5\xa7\x8b\xe4\xb8\x80\xe5\x80\x8b\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x8d\x80\xef\xbc\x88\xe5\x8f\x83\xe8\xa6\x8b\xef\xbc\x9agit help tutorial\xef\xbc\x89\n   clone     \xe8\xa4\x87\xe8\xa3\xbd\xe7\x89\x88\xe6\x9c\xac\xe5\xba\xab\xe8\x87\xb3\xe6\x96\xb0\xe7\x9b\xae\xe9\x8c\x84\n   init      \xe5\xbb\xba\xe7\xab\x8b\xe4\xb8\x80\xe5\x80\x8b\xe7\xa9\xba\xe7\x9a\x84 Git \xe7\x89\x88\xe6\x9c\xac\xe5\xba\xab\xe6\x88\x96\xe9\x87\x8d\xe6\x96\xb0\xe5\x88\x9d\xe5\xa7\x8b\xe5\x8c\x96\xe4\xb8\x80\xe5\x80\x8b\xe5\xb7\xb2\xe5\xad\x98\xe5\x9c\xa8\xe7\x9a\x84\xe7\x89\x88\xe6\x9c\xac\xe5\xba\xab\n\n\xe5\x9c\xa8\xe7\x9b\xae\xe5\x89\x8d\xe8\xae\x8a\xe6\x9b\xb4\xe4\xb8\x8a\xe5\xb7\xa5\xe4\xbd\x9c\xef\xbc\x88\xe5\x8f\x83\xe8\xa6\x8b\xef\xbc\x9agit help everyday\xef\xbc\x89\n   add       \xe6\x96\xb0\xe5\xa2\x9e\xe6\xaa\x94\xe6\xa1\x88\xe5\x85\xa7\xe5\xae\xb9\xe8\x87\xb3\xe7\xb4\xa2\xe5\xbc\x95\n   mv        \xe7\xa7\xbb\xe5\x8b\x95\xe6\x88\x96\xe9\x87\x8d\xe6\x96\xb0\xe5\x91\xbd\xe5\x90\x8d\xe4\xb8\x80\xe5\x80\x8b\xe6\xaa\x94\xe6\xa1\x88\xe3\x80\x81\xe7\x9b\xae\xe9\x8c\x84\xe6\x88\x96\xe7\xac\xa6\xe8\x99\x9f\xe9\x80\xa3\xe7\xb5\x90\n   restore   \xe5\xbe\xa9\xe5\x8e\x9f\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x8d\x80\xe6\xaa\x94\xe6\xa1\x88\n   rm        \xe5\xbe\x9e\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x8d\x80\xe5\x92\x8c\xe7\xb4\xa2\xe5\xbc\x95\xe4\xb8\xad\xe5\x88\xaa\xe9\x99\xa4\xe6\xaa\x94\xe6\xa1\x88\n\n\xe6\xaa\xa2\xe6\x9f\xa5\xe6\xad\xb7\xe5\x8f\xb2\xe5\x92\x8c\xe7\x8b\x80\xe6\x85\x8b\xef\xbc\x88\xe5\x8f\x83\xe8\xa6\x8b\xef\xbc\x9agit help revisions\xef\xbc\x89\n   bisect    \xe9\x80\x8f\xe9\x81\x8e\xe4\xba\x8c\xe5\x88\x86\xe6\x90\x9c\xe5\xb0\x8b\xe5\xae\x9a\xe4\xbd\x8d\xe5\xbc\x95\xe5\x85\xa5 bug \xe7\x9a\x84\xe6\x8f\x90\xe4\xba\xa4\n   diff      \xe9\xa1\xaf\xe7\xa4\xba\xe6\x8f\x90\xe4\xba\xa4\xe4\xb9\x8b\xe9\x96\x93\xe3\x80\x81\xe6\x8f\x90\xe4\xba\xa4\xe5\x92\x8c\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x8d\x80\xe4\xb9\x8b\xe9\x96\x93\xe7\xad\x89\xe7\x9a\x84\xe5\xb7\xae\xe7\x95\xb0\n   grep      \xe8\xbc\xb8\xe5\x87\xba\xe5\x92\x8c\xe6\xa8\xa1\xe5\xbc\x8f\xe7\xac\xa6\xe5\x90\x88\xe7\x9a\x84\xe8\xa1\x8c\n   log       \xe9\xa1\xaf\xe7\xa4\xba\xe6\x8f\x90\xe4\xba\xa4\xe6\x97\xa5\xe8\xaa\x8c\n   show      \xe9\xa1\xaf\xe7\xa4\xba\xe5\x90\x84\xe7\xa8\xae\xe9\xa1\x9e\xe5\x9e\x8b\xe7\x9a\x84\xe7\x89\xa9\xe4\xbb\xb6\n   status    \xe9\xa1\xaf\xe7\xa4\xba\xe5\xb7\xa5\xe4\xbd\x9c\xe5\x8d\x80\xe7\x8b\x80\xe6\x85\x8b\n\n\xe6\x93\xb4\xe5\xb1\x95\xe3\x80\x81\xe6\xa8\x99\xe8\xa8\x98\xe5\x92\x8c\xe8\xaa\xbf\xe6\xa0\xa1\xe6\x82\xa8\xe7\x9a\x84\xe6\xad\xb7\xe5\x8f\xb2\xe8\xa8\x98\xe9\x8c\x84\n   branch    \xe5\x88\x97\xe5\x87\xba\xe3\x80\x81\xe5\xbb\xba\xe7\xab\x8b\xe6\x88\x96\xe5\x88\xaa\xe9\x99\xa4\xe5\x88\x86\xe6\x94\xaf\n   commit    \xe8\xa8\x98\xe9\x8c\x84\xe8\xae\x8a\xe6\x9b\xb4\xe5\x88\xb0\xe7\x89\x88\xe6\x9c\xac\xe5\xba\xab\n   merge     \xe5\x90\x88\xe4\xbd\xb5\xe5\x85\xa9\xe5\x80\x8b\xe6\x88\x96\xe6\x9b\xb4\xe5\xa4\x9a\xe9\x96\x8b\xe7\x99\xbc\xe6\xad\xb7\xe5\x8f\xb2\n   rebase    \xe5\x9c\xa8\xe5\x8f\xa6\xe4\xb8\x80\xe5\x80\x8b\xe5\x88\x86\xe6\x94\xaf\xe4\xb8\x8a\xe9\x87\x8d\xe6\x96\xb0\xe5\xa5\x97\xe7\x94\xa8\xe6\x8f\x90\xe4\xba\xa4\n   reset     \xe9\x87\x8d\xe8\xa8\xad\xe7\x9b\xae\xe5\x89\x8d HEAD \xe5\x88\xb0\xe6\x8c\x87\xe5\xae\x9a\xe7\x8b\x80\xe6\x85\x8b\n   switch    \xe5\x88\x87\xe6\x8f\x9b\xe5\x88\x86\xe6\x94\xaf\n   tag       \xe5\xbb\xba\xe7\xab\x8b\xe3\x80\x81\xe5\x88\x97\xe5\x87\xba\xe3\x80\x81\xe5\x88\xaa\xe9\x99\xa4\xe6\x88\x96\xe9\xa9\x97\xe8\xad\x89\xe4\xb8\x80\xe5\x80\x8b GPG \xe7\xb0\xbd\xe5\x90\x8d\xe7\x9a\x84\xe6\xa8\x99\xe7\xb1\xa4\xe7\x89\xa9\xe4\xbb\xb6\n\n\xe5\x8d\x94\xe5\x90\x8c\xef\xbc\x88\xe5\x8f\x83\xe8\xa6\x8b\xef\xbc\x9agit help workflows\xef\xbc\x89\n   fetch     \xe5\xbe\x9e\xe5\x8f\xa6\xe5\xa4\x96\xe4\xb8\x80\xe5\x80\x8b\xe7\x89\x88\xe6\x9c\xac\xe5\xba\xab\xe4\xb8\x8b\xe8\xbc\x89\xe7\x89\xa9\xe4\xbb\xb6\xe5\x92\x8c\xe5\xbc\x95\xe7\x94\xa8\n   pull      \xe5\x8f\x96\xe5\xbe\x97\xe4\xb8\xa6\xe6\x95\xb4\xe5\x90\x88\xe5\x8f\xa6\xe5\xa4\x96\xe7\x9a\x84\xe7\x89\x88\xe6\x9c\xac\xe5\xba\xab\xe6\x88\x96\xe4\xb8\x80\xe5\x80\x8b\xe6\x9c\xac\xe6\xa9\x9f\xe5\x88\x86\xe6\x94\xaf\n   push      \xe6\x9b\xb4\xe6\x96\xb0\xe9\x81\xa0\xe7\xab\xaf\xe5\xbc\x95\xe7\x94\xa8\xe5\x92\x8c\xe7\x9b\xb8\xe9\x97\x9c\xe7\x9a\x84\xe7\x89\xa9\xe4\xbb\xb6\n\n\xe6\x8c\x87\xe4\xbb\xa4 'git help -a' \xe5\x92\x8c 'git help -g' \xe9\xa1\xaf\xe7\xa4\xba\xe5\x8f\xaf\xe7\x94\xa8\xe7\x9a\x84\xe5\xad\x90\xe6\x8c\x87\xe4\xbb\xa4\xe5\x92\x8c\xe4\xb8\x80\xe4\xba\x9b\xe6\xa6\x82\xe5\xbf\xb5\xe8\xaa\xaa\xe6\x98\x8e\xe3\x80\x82\n\xe6\xaa\xa2\xe8\xa6\x96 'git help <\xe5\x91\xbd\xe4\xbb\xa4>' \xe6\x88\x96 'git help <\xe6\xa6\x82\xe5\xbf\xb5>' \xe4\xbb\xa5\xe5\x8f\x96\xe5\xbe\x97\xe6\x8f\x90\xe4\xbe\x9b\xe5\xad\x90\xe6\x8c\x87\xe4\xbb\xa4\xe6\x88\x96\xe6\xa6\x82\xe5\xbf\xb5\n\xe8\xaa\xaa\xe6\x98\x8e\xe3\x80\x82\n\xe6\x9c\x89\xe9\x97\x9c\xe7\xb3\xbb\xe7\xb5\xb1\xe6\xa6\x82\xe8\xbf\xb0\xef\xbc\x8c\xe6\xaa\xa2\xe8\xa6\x96 'git help git'\xe3\x80\x82\n""
+[0m01:46:15.892441 [debug] [MainThread]: STDERR: "b''"
+[0m01:46:15.907780 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m01:46:15.908980 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:46:20.543685 [debug] [MainThread]: On debug: select 1 as id
+[0m01:46:23.203027 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nomadic-device-373105&j=bq:US:97a45464-707e-4221-b29a-6280ec75a120&page=queryresults
+[0m01:46:23.204161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113d4f820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113d4f580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113c6ad90>]}
+[0m01:46:23.204894 [debug] [MainThread]: Flushing usage events
+[0m01:46:25.596471 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-01-30 01:52:54.482699 | b45f2a56-dda8-4ade-a9e8-47c86f046e27 ==============================
+[0m01:52:54.482699 [info ] [MainThread]: Running with dbt=1.4.1
+[0m01:52:54.485343 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/mango/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m01:52:54.485608 [debug] [MainThread]: Tracking: tracking
+[0m01:52:54.504950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8aefa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8caca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8cacd0>]}
+[0m01:52:54.524577 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:52:54.525041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b45f2a56-dda8-4ade-a9e8-47c86f046e27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8fca00>]}
+[0m01:52:55.357740 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m01:52:55.372753 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m01:52:55.452126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b45f2a56-dda8-4ade-a9e8-47c86f046e27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c968d00>]}
+[0m01:52:55.460413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b45f2a56-dda8-4ade-a9e8-47c86f046e27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8fca30>]}
+[0m01:52:55.460973 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 334 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m01:52:55.461329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b45f2a56-dda8-4ade-a9e8-47c86f046e27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c89ee50>]}
+[0m01:52:55.463280 [info ] [MainThread]: 
+[0m01:52:55.465511 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m01:52:55.466811 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_nomadic-device-373105'
+[0m01:52:55.467247 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:52:56.235083 [debug] [ThreadPool]: Acquiring new bigquery connection 'create_nomadic-device-373105_mango_test'
+[0m01:52:56.236071 [debug] [ThreadPool]: Acquiring new bigquery connection 'create_nomadic-device-373105_mango_test'
+[0m01:52:56.236554 [debug] [ThreadPool]: Creating schema "ReferenceKeyMsg(database='nomadic-device-373105', schema='mango_test', identifier=None)"
+[0m01:52:56.249411 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:52:56.251070 [debug] [ThreadPool]: On create_nomadic-device-373105_mango_test: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "create_nomadic-device-373105_mango_test"} */
+create schema if not exists `nomadic-device-373105`.`mango_test`
+  
+[0m01:52:59.026759 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nomadic-device-373105&j=bq:US:3578bc38-f565-414f-acac-a621c91cb3df&page=queryresults
+[0m01:52:59.029787 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_nomadic-device-373105_mango_test'
+[0m01:52:59.030308 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:52:59.975666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b45f2a56-dda8-4ade-a9e8-47c86f046e27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca29970>]}
+[0m01:52:59.977236 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m01:52:59.977790 [info ] [MainThread]: 
+[0m01:53:00.004022 [debug] [Thread-1  ]: Began running node model.jaffle_shop.my_first_dbt_model
+[0m01:53:00.004632 [info ] [Thread-1  ]: 1 of 2 START sql table model mango_test.my_first_dbt_model ..................... [RUN]
+[0m01:53:00.005441 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.jaffle_shop.my_first_dbt_model'
+[0m01:53:00.005773 [debug] [Thread-1  ]: Began compiling node model.jaffle_shop.my_first_dbt_model
+[0m01:53:00.009540 [debug] [Thread-1  ]: Writing injected SQL for node "model.jaffle_shop.my_first_dbt_model"
+[0m01:53:00.010485 [debug] [Thread-1  ]: Timing info for model.jaffle_shop.my_first_dbt_model (compile): 2023-01-30 01:53:00.006036 => 2023-01-30 01:53:00.010354
+[0m01:53:00.010853 [debug] [Thread-1  ]: Began executing node model.jaffle_shop.my_first_dbt_model
+[0m01:53:00.058507 [debug] [Thread-1  ]: Writing runtime sql for node "model.jaffle_shop.my_first_dbt_model"
+[0m01:53:00.059460 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m01:53:00.060913 [debug] [Thread-1  ]: On model.jaffle_shop.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `nomadic-device-373105`.`mango_test`.`my_first_dbt_model`
+    
+    
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m01:53:04.265161 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nomadic-device-373105&j=bq:US:bfa49bd2-58e5-46a9-968d-7b15b1dc526b&page=queryresults
+[0m01:53:04.287202 [debug] [Thread-1  ]: Timing info for model.jaffle_shop.my_first_dbt_model (execute): 2023-01-30 01:53:00.011050 => 2023-01-30 01:53:04.287120
+[0m01:53:04.288160 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b45f2a56-dda8-4ade-a9e8-47c86f046e27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cc37160>]}
+[0m01:53:04.288722 [info ] [Thread-1  ]: 1 of 2 OK created sql table model mango_test.my_first_dbt_model ................ [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 4.28s]
+[0m01:53:04.290463 [debug] [Thread-1  ]: Finished running node model.jaffle_shop.my_first_dbt_model
+[0m01:53:04.291397 [debug] [Thread-1  ]: Began running node model.jaffle_shop.my_second_dbt_model
+[0m01:53:04.292110 [info ] [Thread-1  ]: 2 of 2 START sql view model mango_test.my_second_dbt_model ..................... [RUN]
+[0m01:53:04.293017 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.jaffle_shop.my_second_dbt_model'
+[0m01:53:04.293436 [debug] [Thread-1  ]: Began compiling node model.jaffle_shop.my_second_dbt_model
+[0m01:53:04.298529 [debug] [Thread-1  ]: Writing injected SQL for node "model.jaffle_shop.my_second_dbt_model"
+[0m01:53:04.299331 [debug] [Thread-1  ]: Timing info for model.jaffle_shop.my_second_dbt_model (compile): 2023-01-30 01:53:04.293794 => 2023-01-30 01:53:04.299253
+[0m01:53:04.299659 [debug] [Thread-1  ]: Began executing node model.jaffle_shop.my_second_dbt_model
+[0m01:53:04.324103 [debug] [Thread-1  ]: Writing runtime sql for node "model.jaffle_shop.my_second_dbt_model"
+[0m01:53:04.325007 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m01:53:04.326936 [debug] [Thread-1  ]: On model.jaffle_shop.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_second_dbt_model"} */
+
+
+  create or replace view `nomadic-device-373105`.`mango_test`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `nomadic-device-373105`.`mango_test`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m01:53:06.423579 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nomadic-device-373105&j=bq:US:05c72018-ffc6-4ee0-ad99-4afcdc7814e7&page=queryresults
+[0m01:53:06.426597 [debug] [Thread-1  ]: Timing info for model.jaffle_shop.my_second_dbt_model (execute): 2023-01-30 01:53:04.299877 => 2023-01-30 01:53:06.426509
+[0m01:53:06.427636 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b45f2a56-dda8-4ade-a9e8-47c86f046e27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca1c5e0>]}
+[0m01:53:06.428327 [info ] [Thread-1  ]: 2 of 2 OK created sql view model mango_test.my_second_dbt_model ................ [[32mCREATE VIEW (0 processed)[0m in 2.13s]
+[0m01:53:06.428883 [debug] [Thread-1  ]: Finished running node model.jaffle_shop.my_second_dbt_model
+[0m01:53:06.430666 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m01:53:06.431417 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:53:06.431704 [debug] [MainThread]: Connection 'model.jaffle_shop.my_second_dbt_model' was properly closed.
+[0m01:53:06.432033 [info ] [MainThread]: 
+[0m01:53:06.432389 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 10.97 seconds (10.97s).
+[0m01:53:06.432898 [debug] [MainThread]: Command end result
+[0m01:53:06.444476 [info ] [MainThread]: 
+[0m01:53:06.444943 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:53:06.445255 [info ] [MainThread]: 
+[0m01:53:06.445579 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m01:53:06.445985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8fc100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c965790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cbf91c0>]}
+[0m01:53:06.446296 [debug] [MainThread]: Flushing usage events

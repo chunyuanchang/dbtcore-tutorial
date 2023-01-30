@@ -1,0 +1,4 @@
+2023-01-30 01:52:59.068936 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=13, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.10.3', 52978), raddr=('172.217.160.106', 443)>
+2023-01-30 01:53:00.018220 (Thread-1): unclosed <ssl.SSLSocket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.10.3', 52976), raddr=('172.217.160.106', 443)>
+2023-01-30 01:53:00.020211 (Thread-1): unclosed <ssl.SSLSocket fd=14, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.10.3', 52980), raddr=('172.217.160.106', 443)>
+2023-01-30 01:53:06.436135 (MainThread): unclosed <ssl.SSLSocket fd=14, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.10.3', 52984), raddr=('172.217.160.106', 443)>
